@@ -1,0 +1,11 @@
+.gatling-holo-host{position:fixed;z-index:2147482000;pointer-events:none;isolation:isolate;filter:drop-shadow(0 0 16px var(--holo));animation:gatlingMaterialize .4s ease-out both}
+.gatling-holo-canvas{position:absolute;inset:0;z-index:2;display:block}
+.gatling-holo-scan{position:absolute;inset:15% 5%;border:1px solid var(--holo);border-radius:50%;opacity:.38;transform:perspective(220px) rotateX(67deg);box-shadow:0 0 20px var(--holo),inset 0 0 22px var(--holo);animation:gatlingPulse .45s alternate infinite}
+.gatling-holo-platform{position:absolute;left:16%;right:16%;bottom:8%;height:13%;border:2px solid var(--holo);border-radius:50%;box-shadow:0 0 16px var(--holo);opacity:.55}
+.gatling-holo-caption{position:absolute;bottom:0;left:0;right:0;text-align:center;font:700 9px/1.2 monospace;letter-spacing:2px;color:var(--holo);text-shadow:0 0 9px var(--holo)}
+.gatling-holo-source{box-shadow:0 0 19px 5px #39e9ff!important;animation:gatlingPulse .35s alternate infinite}
+.gatling-holo-bullet{position:fixed;z-index:2147482001;pointer-events:none;width:31px;height:4px;border-radius:100%;background:#fff;box-shadow:0 0 7px 3px var(--shot),0 0 22px 7px var(--shot);transform-origin:left center}
+.gatling-holo-fallback{background:radial-gradient(ellipse at center,rgba(0,210,255,.3),transparent 70%)}
+.gatling-holo-fallback-label{position:absolute;top:45%;width:100%;text-align:center;color:var(--holo);font:700 13px monospace}
+@keyframes gatlingMaterialize{from{opacity:0;transform:scale(.2)}to{opacity:1;transform:scale(1)}}
+@keyframes gatlingPulse{from{opacity:.22}to{opacity:.8}}
